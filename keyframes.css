@@ -1,17 +1,27 @@
 .circle-holder{
     background-color: blue;
-    animation: spin 40s infinite linear;
+    /* animation: spin 40s infinite linear; */
 }
 
 .circle{
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background-color: purple;
-    animation: spin 4s infinite linear;
+    /* background-image: url("http://rs871.pbsrc.com/albums/ab277/ANNNNNNNNA_bucket/Animated%20Gif/Psychedelic%20Animated%20Gifs/trippy-1.gif~c200"); */
+    overflow: hidden;
+    animation: spin 2s infinite linear;
+    color: white;
+    text-shadow: 15px 15px black;
+    font-size: 100px;
+    text-align: center;
+    line-height: 200px;
+    vertical-align: center;
 }
 
 @keyframes spin{
-    from {transform: rotate(0deg) translateX(0);}
-    to{transform: rotate(360deg) translateX(500px);}
+    0%{transform: rotate(0deg);}
+    25%{text-shadow: 15px -15px black;}
+    50%{text-shadow: -15px -15px black;}
+    75%{text-shadow: -15px 15px black;}
+    100%{transform: rotate(360deg);}
 }
